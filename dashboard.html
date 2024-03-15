@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attendance Tracker</title>
+</head>
+<body class="body1">
+  <link rel="stylesheet" href="style.css" />
+    <div class="container1">
+        <h1>Attendance Tracker</h1>
+        <ul class="student-list">
+            <li class="student-item">
+                <label for="student1">Student 1:</label>
+                <input type="checkbox" id="student1" class="attendance-checkbox">
+            </li>
+            <li class="student-item">
+                <label for="student2">Student 2:</label>
+                <input type="checkbox" id="student2" class="attendance-checkbox">
+            </li>
+            <li class="student-item">
+                <label for="student3">Student 3:</label>
+                <input type="checkbox" id="student3" class="attendance-checkbox">
+            </li>
+        </ul><br>
+        <button onclick="saveAttendance()" class="onclick-btn">Save Attendance</button> 
+        <br><div id="attendance-summary"></div>
+        <button class="logout-btn">Logout</button>
+    </div>
+    <script src="dash.js"></script>
+</body>
+</html>
